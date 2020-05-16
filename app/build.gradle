@@ -53,8 +53,10 @@ dependencies {
 
     def lifecycle_version = "2.2.0"
     // ViewModel
+    //noinspection GradleDependency
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     // LiveData
+    //noinspection GradleDependency
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
 //    //room
