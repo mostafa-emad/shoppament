@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -358,6 +359,52 @@ public class ViewController {
             }
         });
         okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(onObjectChangedListener!=null)
+                    onObjectChangedListener.onObjectChanged(0,0,alert);
+                alert.dismiss();
+            }
+        });
+    }
+
+    public void showUploadOptionsDialog(final Context context, final OnObjectChangedListener onObjectChangedListener) {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+        View view = inflater.inflate(R.layout.layout_upload_options_dialog, null);
+
+        TextView cameraOptionTxt = view.findViewById(R.id.camera_option_txt);
+        TextView deviceOptionTxt = view.findViewById(R.id.device_option_txt);
+
+        builder.setCancelable(true);
+        builder.setView(view);
+        final AlertDialog alert =builder.create();
+
+        Objects.requireNonNull(alert.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        WindowManager.LayoutParams manager = Objects.requireNonNull(alert.getWindow()).getAttributes();
+        manager.gravity = Gravity.BOTTOM;
+        manager.windowAnimations = R.style.DialogBottomTheme;
+
+        alert.show();
+        alert.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        alert.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                alert.dismiss();
+            }
+        });
+
+        cameraOptionTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(onObjectChangedListener!=null)
+                    onObjectChangedListener.onObjectChanged(0,0,alert);
+                alert.dismiss();
+            }
+        });
+
+        deviceOptionTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(onObjectChangedListener!=null)

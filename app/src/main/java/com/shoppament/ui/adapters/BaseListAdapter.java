@@ -6,9 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import com.shoppament.utils.callbacks.OnObjectChangedListener;
+
 public class BaseListAdapter extends BaseAdapter {
     protected LayoutInflater layoutInflater;
     protected Activity activity;
+    protected OnObjectChangedListener onObjectChangedListener;
+
+    public void setOnObjectChangedListener(OnObjectChangedListener onObjectChangedListener) {
+        this.onObjectChangedListener = onObjectChangedListener;
+    }
 
     @Override
     public int getCount() {
