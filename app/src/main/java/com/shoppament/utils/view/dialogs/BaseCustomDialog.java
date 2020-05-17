@@ -27,8 +27,6 @@ public class BaseCustomDialog {
         this.onObjectChangedListener = onObjectChangedListener;
         this.layout = layout;
         this.activity = activity;
-
-        init();
     }
 
     protected void init() {
@@ -42,5 +40,9 @@ public class BaseCustomDialog {
 
         Objects.requireNonNull(alert.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         manager = Objects.requireNonNull(alert.getWindow()).getAttributes();
+    }
+
+    public int pxFromDp(float dp) {
+        return (int) (dp * activity.getResources().getDisplayMetrics().density);
     }
 }

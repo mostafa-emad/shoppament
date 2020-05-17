@@ -31,6 +31,7 @@ public class LocationMapDialog extends BaseCustomDialog implements OnMapReadyCal
     public LocationMapDialog(Activity activity,FragmentManager fragmentManager, OnObjectChangedListener onObjectChangedListener) {
         super(activity,R.layout.layout_map_dialog, onObjectChangedListener);
         this.fragmentManager = fragmentManager;
+        init();
         initGoogleMap();
     }
 

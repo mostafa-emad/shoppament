@@ -1,6 +1,7 @@
 package com.shoppament.ui.activity.registration;
 
 import android.app.Application;
+import android.graphics.Bitmap;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
@@ -28,25 +29,50 @@ public class RegistrationViewModel extends BaseViewModel {
         return registrationRepository.fetchData();
     }
 
-    public MutableLiveData<List<PictureModel>> uploadNewPicture(PictureModel pictureModel){
-        MutableLiveData<List<PictureModel>> picListMutableLiveData = new MutableLiveData<>();
-        int size = pictureModels.size();
-        if(size == 5) {
-            picListMutableLiveData.setValue(null);
-        }else {
-            int index = size + 1;
-            pictureModel.setName("image" + index + ".jpeg");
+//    MutableLiveData<List<PictureModel>> uploadNewPicture(PictureModel pictureModel){
+//        MutableLiveData<List<PictureModel>> picListMutableLiveData = new MutableLiveData<>();
+//        int size = pictureModels.size();
+//        if(size == 5) {
+//            picListMutableLiveData.setValue(null);
+//        }else {
+//            int index = size + 1;
+//            pictureModel.setName("image" + index + ".jpeg");
+//            pictureModels.add(pictureModel);
+//            picListMutableLiveData.setValue(pictureModels);
+//        }
+//        return picListMutableLiveData;
+//    }
+
+    MutableLiveData<List<PictureModel>> uploadNewPicture(PictureModel pictureModel){
+        MutableLiveData<List<PictureModel>> uploadNewPictureLiveData = new MutableLiveData<>();
+        if(pictureModel != null) {
             pictureModels.add(pictureModel);
-            picListMutableLiveData.setValue(pictureModels);
+            uploadNewPictureLiveData.setValue(pictureModels);
         }
-        return picListMutableLiveData;
+        return uploadNewPictureLiveData;
     }
 
-    public List<PictureModel> getPictureModels() {
+    MutableLiveData<Boolean> deletePicture(int position){
+        MutableLiveData<Boolean> deletePictureLiveData = new MutableLiveData<>();
+        try {
+            pictureModels.remove(position);
+            deletePictureLiveData.setValue(true);
+        }catch (Exception e){
+            e.printStackTrace();
+            deletePictureLiveData.setValue(false);
+        }
+        return deletePictureLiveData;
+    }
+
+    boolean isUploadNewPictureEnabled() {
+        return pictureModels.size() < 5;
+    }
+
+    List<PictureModel> getPictureModels() {
         return pictureModels;
     }
 
-    public List<SlotTimingModel> getSlotTimingModels() {
+    List<SlotTimingModel> getSlotTimingModels() {
         slotTimingModels.add(new SlotTimingModel("Slot 1 - 9:00am to 9:05am"));
         slotTimingModels.add(new SlotTimingModel("Slot 2 - 9:00am to 9:05am"));
         slotTimingModels.add(new SlotTimingModel("Slot 3 - 9:00am to 9:05am"));

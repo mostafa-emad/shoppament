@@ -10,12 +10,18 @@ import android.widget.TextView;
 
 import com.shoppament.R;
 import com.shoppament.utils.callbacks.OnObjectChangedListener;
+import com.shoppament.utils.view.UploadFileController;
 
 public class UploadOptionsDialog extends BaseCustomDialog{
 
+    public UploadOptionsDialog(Activity activity) {
+        super(activity,R.layout.layout_upload_options_dialog, null);
+        init();
+    }
+
     public UploadOptionsDialog(Activity activity,OnObjectChangedListener onObjectChangedListener) {
         super(activity,R.layout.layout_upload_options_dialog, onObjectChangedListener);
-        isCancelEnabled = true;
+        init();
     }
 
     @Override
@@ -23,7 +29,6 @@ public class UploadOptionsDialog extends BaseCustomDialog{
         super.init();
         TextView cameraOptionTxt = rootView.findViewById(R.id.camera_option_txt);
         TextView deviceOptionTxt = rootView.findViewById(R.id.device_option_txt);
-
 
         manager.gravity = Gravity.BOTTOM;
         manager.windowAnimations = R.style.DialogBottomTheme;
@@ -41,6 +46,7 @@ public class UploadOptionsDialog extends BaseCustomDialog{
         cameraOptionTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                UploadFileController.getInstance().capturePicture(activity);
                 if(onObjectChangedListener!=null)
                     onObjectChangedListener.onObjectChanged(0,0,alert);
                 alert.dismiss();
@@ -50,6 +56,7 @@ public class UploadOptionsDialog extends BaseCustomDialog{
         deviceOptionTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                UploadFileController.getInstance().uploadPictureFromDevice(activity);
                 if(onObjectChangedListener!=null)
                     onObjectChangedListener.onObjectChanged(0,0,alert);
                 alert.dismiss();

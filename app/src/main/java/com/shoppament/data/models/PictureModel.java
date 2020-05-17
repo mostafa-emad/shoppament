@@ -1,10 +1,11 @@
 package com.shoppament.data.models;
 
+import android.graphics.Bitmap;
+
 public class PictureModel extends BaseModel{
     private String id;
     private String name;
     private String path;
-
 
     public PictureModel() {
 

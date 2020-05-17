@@ -13,15 +13,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.shoppament.R;
 import com.shoppament.data.models.PictureModel;
 import com.shoppament.databinding.ItemPictureBinding;
+import com.shoppament.utils.callbacks.IPictureListener;
 
 import java.util.List;
 
 public class PicturesRecyclerAdapter extends BaseRecyclerAdapter{
     private List<PictureModel> pictureModels;
+    private IPictureListener iPictureListener;
 
-    public PicturesRecyclerAdapter(List<PictureModel> pictureModels, Activity activity) {
+    public PicturesRecyclerAdapter(List<PictureModel> pictureModels, Activity activity,IPictureListener iPictureListener) {
         this.pictureModels = pictureModels;
-        this.activity=activity;
+        this.activity = activity;
+        this.iPictureListener = iPictureListener;
     }
 
     public void setPictureModels(List<PictureModel> pictureModels) {
@@ -45,9 +48,17 @@ public class PicturesRecyclerAdapter extends BaseRecyclerAdapter{
             holder.binding.removePictureImg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    pictureModels.remove(position);
-                    notifyItemRemoved(position);
-                    notifyItemRangeChanged(position,1);
+                    if(iPictureListener!=null){
+                        iPictureListener.deleteSelectedPic(position);
+                    }
+                }
+            });
+            holder.binding.pictureNameTxt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(iPictureListener!=null){
+                        iPictureListener.showSelectedPic(pictureModel);
+                    }
                 }
             });
         }catch (Exception e){
