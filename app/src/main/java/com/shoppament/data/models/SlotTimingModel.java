@@ -2,11 +2,8 @@ package com.shoppament.data.models;
 
 public class SlotTimingModel extends BaseModel{
     private String id;
-    private String time;
-
-    public SlotTimingModel(String time) {
-        this.time = time;
-    }
+    private String fromDate;
+    private String toDate;
 
     public String getId() {
         return id;
@@ -16,11 +13,19 @@ public class SlotTimingModel extends BaseModel{
         this.id = id;
     }
 
-    public String getTime() {
-        return time;
+    public String getFromDate() {
+        return fromDate;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public String getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
     }
 }

@@ -10,7 +10,35 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705d01f1-8d73-4a40-88e5-c3098e0ab7db" name="Default Changelist" comment="" />
+    <list default="true" id="705d01f1-8d73-4a40-88e5-c3098e0ab7db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/TimeFormatManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/TimeEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_access_time.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pop_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_time_edit_text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/SlotTimingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/SlotTimingModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/repo/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/repo/RegistrationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/SlotsTimingRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/SlotsTimingRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/Utils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_popup_option.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_popup_option.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/app/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +50,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="33007bf1a67074b5" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_10_API_28_2" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -71,68 +99,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="194" selection-start-line="194" selection-end-line="194" />
+            <state relative-caret-position="990">
+              <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4492#4556#0" expanded="true" />
-                <element signature="e#5030#5358#0" expanded="true" />
-                <element signature="e#5357#5358#0" expanded="true" />
-                <element signature="e#5767#6142#0" expanded="true" />
-                <element signature="e#6141#6142#0" expanded="true" />
-                <element signature="e#6433#6808#0" expanded="true" />
-                <element signature="e#6807#6808#0" expanded="true" />
-                <element signature="e#7157#7211#0" expanded="true" />
-                <element signature="e#7588#7973#0" expanded="true" />
-                <element signature="e#7972#7973#0" expanded="true" />
+                <element signature="e#3445#3467#0" expanded="true" />
+                <element signature="e#3504#3527#0" expanded="true" />
+                <element signature="e#3562#3584#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/PicturesRecyclerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/ConstantsKeys.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="451" column="65" selection-start-line="451" selection-start-column="65" selection-end-line="451" selection-end-column="65" />
+            <state relative-caret-position="105">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2160">
+              <caret line="220" column="57" selection-start-line="220" selection-start-column="57" selection-end-line="220" selection-end-column="57" />
               <folding>
-                <element signature="e#1896#1936#0" expanded="true" />
-                <element signature="e#8065#8088#0" expanded="true" />
-                <element signature="e#24830#29241#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#initViews#0;class#RegistrationActivity#0" />
+                <element signature="method#doCreate#0;class#RegistrationActivity#0" />
+                <element signature="method#clickToUploadPics#0;class#RegistrationActivity#0" />
+                <element signature="method#showUploadPicsError#0;class#RegistrationActivity#0" />
+                <element signature="method#showSelectedPic#0;class#RegistrationActivity#0" />
+                <element signature="method#deleteSelectedPic#0;class#RegistrationActivity#0" />
+                <element signature="method#onActivityResult#0;class#RegistrationActivity#0" />
+                <element signature="method#getLocation#0;class#RegistrationActivity#0" />
+                <element signature="method#showLocationErrors#0;class#RegistrationActivity#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_popup_option.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -141,12 +156,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="1530">
+              <caret line="131" column="62" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
               <folding>
                 <element signature="method#uploadNewPicture#0;class#RegistrationViewModel#0" />
-                <element signature="e#2472#2473#0" expanded="true" />
-                <element signature="e#2553#2554#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/data/repo/RegistrationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/TimeFormatManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1425">
+              <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/TimeEditText.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,15 +203,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>RecyclerView</find>
-      <find>reset</find>
       <find>android:lines=&quot;1&quot;</find>
       <find>android:layout_marginTop=&quot;@dimen/padding_medium&quot;</find>
       <find>BranchModel</find>
@@ -177,8 +223,16 @@
       <find>picturesRecyclerAdapter</find>
       <find>capacity</find>
       <find>Butt</find>
-      <find>hh</find>
       <find>phone_number</find>
+      <find>hh</find>
+      <find>oper</find>
+      <find>starting</find>
+      <find>marg</find>
+      <find>mar</find>
+      <find>m</find>
+      <find>reset</find>
+      <find>type</find>
+      <find>shop_ty</find>
     </findStrings>
     <replaceStrings>
       <replace>android:singleLine=&quot;true&quot;</replace>
@@ -192,7 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_drop_down.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/btn_bg_shape.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/et_round_border.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/hyperlink_underline.xml" />
@@ -206,7 +259,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_registration.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_upload_options_dialog.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/ViewController.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/dialog_down.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/dialog_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/UploadOptionsDialog.java" />
@@ -214,13 +266,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_map_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/splash/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/SlotsTimingRecyclerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/SlotTimingModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_slot_time.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/base/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/PictureModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_picture_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/dialogs/LocationMapDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/dialogs/UploadOptionsDialog.java" />
@@ -229,18 +278,30 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/UploadFileController.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_picture.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/callbacks/IPictureListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/ConstantsKeys.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/PicturesRecyclerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Shoppament.iml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/Utils.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/SlotTimingModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/TimeEditText.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/SlotsTimingRecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/TimeFormatManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_time_edit_text.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_popup_option.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/ViewController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/shoppament/data/repo/RegistrationRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
+    <option name="x" value="17" />
     <option name="y" value="26" />
     <option name="width" value="1334" />
     <option name="height" value="808" />
@@ -250,7 +311,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,37 +357,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -380,16 +410,47 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="shoppament" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Shoppament" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_g610f-33007bf1a67074b5" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
     <property name="DEBUGGABLE_PROCESS" value="com.shoppament" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -407,8 +468,8 @@
       <recent name="com.shoppament.ui.adapters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
     </key>
   </component>
@@ -542,11 +603,25 @@
       <option name="project" value="LOCAL" />
       <updated>1589703204547</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- update.">
+      <created>1589712271901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589712271901</updated>
+    </task>
+    <task id="LOCAL-00005" summary="- test update code.">
+      <created>1589712685985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589712685985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="23" width="1334" height="808" extended-state="0" />
+    <frame x="17" y="26" width="1334" height="808" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22832817" />
@@ -560,7 +635,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.498452" weight="0.32756132" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.62193364" />
       <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Android Profiler" order="3" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.501548" side_tool="true" weight="0.32756132" />
       <window_info anchor="bottom" id="Build" order="6" weight="0.32756132" />
@@ -582,7 +657,9 @@
     <MESSAGE value="- fix the error." />
     <MESSAGE value="- design layouts - demo protoType." />
     <MESSAGE value="- upload options camera and device.&#10;- changes in UI." />
-    <option name="LAST_COMMIT_MESSAGE" value="- upload options camera and device.&#10;- changes in UI." />
+    <MESSAGE value="- update." />
+    <MESSAGE value="- test update code." />
+    <option name="LAST_COMMIT_MESSAGE" value="- test update code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -617,11 +694,52 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/TimeFormatManager.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/TimeEditText.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/TimeFormatManager.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>insideCapacity + outsideCapacity</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>Bitmap.createScaledBitmap(bitmap,pictureImg.getWidth(),pictureImg.getHeight(),true)</expression-string>
         <language-id>JAVA</language-id>
@@ -630,203 +748,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/hyperlink_underline.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_close_red.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/BaseListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="93" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/half_round_shape.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/dialog_in.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/trans_left_in.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/com/shoppament/databinding/ActivityRegistrationBindingImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_registration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" selection-start-line="9" selection-end-line="785" />
-          <folding>
-            <element signature="e#244#39623#0" />
-            <element signature="e#400#440#0" expanded="true" />
-            <element signature="e#762#784#0" expanded="true" />
-            <element signature="e#822#844#0" expanded="true" />
-            <element signature="e#885#907#0" expanded="true" />
-            <element signature="e#936#959#0" expanded="true" />
-            <element signature="e#1499#1530#0" expanded="true" />
-            <element signature="e#1838#1860#0" expanded="true" />
-            <element signature="e#1893#1916#0" expanded="true" />
-            <element signature="e#2219#2241#0" expanded="true" />
-            <element signature="e#2804#2826#0" expanded="true" />
-            <element signature="e#2934#2956#0" expanded="true" />
-            <element signature="e#2989#3012#0" expanded="true" />
-            <element signature="e#3105#3127#0" expanded="true" />
-            <element signature="e#3871#3893#0" expanded="true" />
-            <element signature="e#3926#3949#0" expanded="true" />
-            <element signature="e#4042#4064#0" expanded="true" />
-            <element signature="e#4579#4602#0" expanded="true" />
-            <element signature="e#4968#5001#0" expanded="true" />
-            <element signature="e#5280#5302#0" expanded="true" />
-            <element signature="e#5335#5358#0" expanded="true" />
-            <element signature="e#5501#5530#0" expanded="true" />
-            <element signature="e#6081#6103#0" expanded="true" />
-            <element signature="e#6145#6169#0" expanded="true" />
-            <element signature="e#6202#6225#0" expanded="true" />
-            <element signature="e#6693#6716#0" expanded="true" />
-            <element signature="e#7140#7176#0" expanded="true" />
-            <element signature="e#7454#7476#0" expanded="true" />
-            <element signature="e#7509#7532#0" expanded="true" />
-            <element signature="e#7828#7854#0" expanded="true" />
-            <element signature="e#8336#8358#0" expanded="true" />
-            <element signature="e#8391#8414#0" expanded="true" />
-            <element signature="e#8715#8739#0" expanded="true" />
-            <element signature="e#9148#9171#0" expanded="true" />
-            <element signature="e#9592#9619#0" expanded="true" />
-            <element signature="e#9900#9922#0" expanded="true" />
-            <element signature="e#9955#9978#0" expanded="true" />
-            <element signature="e#10284#10313#0" expanded="true" />
-            <element signature="e#10796#10818#0" expanded="true" />
-            <element signature="e#10851#10874#0" expanded="true" />
-            <element signature="e#11167#11201#0" expanded="true" />
-            <element signature="e#11673#11695#0" expanded="true" />
-            <element signature="e#11728#11751#0" expanded="true" />
-            <element signature="e#11998#12019#0" expanded="true" />
-            <element signature="e#12644#12666#0" expanded="true" />
-            <element signature="e#12774#12796#0" expanded="true" />
-            <element signature="e#12829#12852#0" expanded="true" />
-            <element signature="e#12945#12966#0" expanded="true" />
-            <element signature="e#13523#13545#0" expanded="true" />
-            <element signature="e#13653#13675#0" expanded="true" />
-            <element signature="e#13708#13731#0" expanded="true" />
-            <element signature="e#13824#13843#0" expanded="true" />
-            <element signature="e#14399#14421#0" expanded="true" />
-            <element signature="e#14529#14551#0" expanded="true" />
-            <element signature="e#14584#14607#0" expanded="true" />
-            <element signature="e#14700#14718#0" expanded="true" />
-            <element signature="e#15178#15201#0" expanded="true" />
-            <element signature="e#15563#15595#0" expanded="true" />
-            <element signature="e#16167#16189#0" expanded="true" />
-            <element signature="e#16233#16255#0" expanded="true" />
-            <element signature="e#16288#16311#0" expanded="true" />
-            <element signature="e#16750#16773#0" expanded="true" />
-            <element signature="e#17193#17225#0" expanded="true" />
-            <element signature="e#17797#17819#0" expanded="true" />
-            <element signature="e#17863#17886#0" expanded="true" />
-            <element signature="e#17919#17942#0" expanded="true" />
-            <element signature="e#18383#18406#0" expanded="true" />
-            <element signature="e#18831#18859#0" expanded="true" />
-            <element signature="e#19353#19381#0" expanded="true" />
-            <element signature="e#19486#19508#0" expanded="true" />
-            <element signature="e#19541#19564#0" expanded="true" />
-            <element signature="e#20045#20067#0" expanded="true" />
-            <element signature="e#20450#20484#0" expanded="true" />
-            <element signature="e#20976#21005#0" expanded="true" />
-            <element signature="e#21110#21132#0" expanded="true" />
-            <element signature="e#21165#21188#0" expanded="true" />
-            <element signature="e#21676#21698#0" expanded="true" />
-            <element signature="e#22082#22117#0" expanded="true" />
-            <element signature="e#22846#22869#0" expanded="true" />
-            <element signature="e#22947#22981#0" expanded="true" />
-            <element signature="e#23679#23702#0" expanded="true" />
-            <element signature="e#23870#23903#0" expanded="true" />
-            <element signature="e#24868#24891#0" expanded="true" />
-            <element signature="e#25658#25681#0" expanded="true" />
-            <element signature="e#26472#26494#0" expanded="true" />
-            <element signature="e#26880#26916#0" expanded="true" />
-            <element signature="e#27139#27161#0" expanded="true" />
-            <element signature="e#27553#27590#0" expanded="true" />
-            <element signature="e#27872#27894#0" expanded="true" />
-            <element signature="e#27927#27950#0" expanded="true" />
-            <element signature="e#28093#28125#0" expanded="true" />
-            <element signature="e#28606#28628#0" expanded="true" />
-            <element signature="e#29016#29060#0" expanded="true" />
-            <element signature="e#29291#29313#0" expanded="true" />
-            <element signature="e#29754#29796#0" expanded="true" />
-            <element signature="e#30111#30134#0" expanded="true" />
-            <element signature="e#30167#30190#0" expanded="true" />
-            <element signature="e#30670#30692#0" expanded="true" />
-            <element signature="e#31130#31162#0" expanded="true" />
-            <element signature="e#31441#31463#0" expanded="true" />
-            <element signature="e#31496#31519#0" expanded="true" />
-            <element signature="e#31662#31691#0" expanded="true" />
-            <element signature="e#32248#32280#0" expanded="true" />
-            <element signature="e#32385#32407#0" expanded="true" />
-            <element signature="e#32440#32463#0" expanded="true" />
-            <element signature="e#33147#33173#0" expanded="true" />
-            <element signature="e#33280#33303#0" expanded="true" />
-            <element signature="e#33336#33359#0" expanded="true" />
-            <element signature="e#33997#34019#0" expanded="true" />
-            <element signature="e#34052#34075#0" expanded="true" />
-            <element signature="e#34218#34240#0" expanded="true" />
-            <element signature="e#34954#34970#0" expanded="true" />
-            <element signature="e#35075#35097#0" expanded="true" />
-            <element signature="e#35130#35153#0" expanded="true" />
-            <element signature="e#35634#35656#0" expanded="true" />
-            <element signature="e#36115#36155#0" expanded="true" />
-            <element signature="e#36648#36669#0" expanded="true" />
-            <element signature="e#36774#36796#0" expanded="true" />
-            <element signature="e#36829#36852#0" expanded="true" />
-            <element signature="e#37551#37574#0" expanded="true" />
-            <element signature="e#37679#37701#0" expanded="true" />
-            <element signature="e#37734#37757#0" expanded="true" />
-            <element signature="e#38281#38303#0" expanded="true" />
-            <element signature="e#38336#38359#0" expanded="true" />
-            <element signature="e#38502#38522#0" expanded="true" />
-            <element signature="e#38985#39007#0" expanded="true" />
-            <element signature="e#39470#39510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_upload_options_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/dialog_up.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -838,23 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/ViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="370" column="29" selection-start-line="370" selection-end-line="415" />
-          <folding>
-            <element signature="method#showDialog#1;class#ViewController#0" />
-            <element signature="method#showUploadOptionsDialog#0;class#ViewController#0" />
-            <element signature="e#18031#18211#0" expanded="true" />
-            <element signature="e#18210#18211#0" expanded="true" />
-            <element signature="e#18257#18531#0" expanded="true" />
-            <element signature="e#18530#18531#0" expanded="true" />
-            <element signature="e#18577#18851#0" expanded="true" />
-            <element signature="e#18850#18851#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,25 +812,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/SlotTimingModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/splash/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -937,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/SlotsTimingRecyclerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_slot_time.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -951,13 +829,6 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/base/BaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1004,13 +875,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="66" column="27" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1107,15 +971,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/callbacks/IPictureListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-          <folding>
-            <element signature="method#uploadNewPicture#0;class#RegistrationViewModel#0" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2553#2554#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1126,63 +993,190 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Shoppament.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Shoppament/Shoppament.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_registration.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" selection-start-line="9" selection-end-line="785" />
+          <folding>
+            <element signature="e#244#39623#0" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/Utils.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/PicturesRecyclerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="133">
+          <caret line="37" column="72" selection-start-line="37" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/callbacks/IPictureListener.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/data/models/SlotTimingModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_time_edit_text.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/PopupOptionsListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="272" column="86" selection-start-line="272" selection-start-column="86" selection-end-line="272" selection-end-column="86" />
+          <folding>
+            <element signature="method#showDialog#1;class#ViewController#0" />
+            <element signature="method#showUploadOptionsDialog#0;class#ViewController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/adapters/SlotsTimingRecyclerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="48" column="86" selection-start-line="48" selection-start-column="86" selection-end-line="48" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1544#1598#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        <state relative-caret-position="2160">
+          <caret line="220" column="57" selection-start-line="220" selection-start-column="57" selection-end-line="220" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4492#4556#0" expanded="true" />
-            <element signature="e#5030#5358#0" expanded="true" />
-            <element signature="e#5357#5358#0" expanded="true" />
-            <element signature="e#5767#6142#0" expanded="true" />
-            <element signature="e#6141#6142#0" expanded="true" />
-            <element signature="e#6433#6808#0" expanded="true" />
-            <element signature="e#6807#6808#0" expanded="true" />
-            <element signature="e#7157#7211#0" expanded="true" />
-            <element signature="e#7588#7973#0" expanded="true" />
-            <element signature="e#7972#7973#0" expanded="true" />
+            <element signature="method#initViews#0;class#RegistrationActivity#0" />
+            <element signature="method#doCreate#0;class#RegistrationActivity#0" />
+            <element signature="method#clickToUploadPics#0;class#RegistrationActivity#0" />
+            <element signature="method#showUploadPicsError#0;class#RegistrationActivity#0" />
+            <element signature="method#showSelectedPic#0;class#RegistrationActivity#0" />
+            <element signature="method#deleteSelectedPic#0;class#RegistrationActivity#0" />
+            <element signature="method#onActivityResult#0;class#RegistrationActivity#0" />
+            <element signature="method#getLocation#0;class#RegistrationActivity#0" />
+            <element signature="method#showLocationErrors#0;class#RegistrationActivity#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_popup_option.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/ui/activity/registration/RegistrationViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="131" column="62" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
+          <folding>
+            <element signature="method#uploadNewPicture#0;class#RegistrationViewModel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/TimeFormatManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="104" column="37" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/utils/view/TimeEditText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/shoppament/data/repo/RegistrationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="451" column="65" selection-start-line="451" selection-start-column="65" selection-end-line="451" selection-end-column="65" />
+        <state relative-caret-position="990">
+          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
           <folding>
-            <element signature="e#1896#1936#0" expanded="true" />
-            <element signature="e#8065#8088#0" expanded="true" />
-            <element signature="e#24830#29241#0" />
+            <element signature="e#3445#3467#0" expanded="true" />
+            <element signature="e#3504#3527#0" expanded="true" />
+            <element signature="e#3562#3584#0" expanded="true" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -13,7 +13,7 @@
         tools:text="Name"
         android:gravity="center"
         android:layout_margin="@dimen/padding_small"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorText"
         android:layout_centerInParent="true"
         style="@style/Base.TextAppearance.AppCompat.Small" />
 

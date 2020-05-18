@@ -287,7 +287,7 @@ public class ViewController {
         popupWindow.setFocusable(true);
 //        popupWindow.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.popup_background));
         popupWindow.setWidth(pxFromDp(activity,100));
-//        popupWindow.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.popup_bg));
+        popupWindow.setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.popup_bg));
 //        popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         popupWindow.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
         popupWindow.setContentView(listViewSort);

@@ -72,16 +72,17 @@
                     android:id="@+id/shop_name_et"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:lines="1"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="@dimen/padding_large"
                     android:padding="@dimen/padding_medium"
-                    android:imeOptions="actionNext"
-                    android:nextFocusDown="@+id/shop_desc_et"
+                    android:hint="@string/shop_name_et"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="start"
+                    android:inputType="textPersonName"
+                    android:lines="1"
                     android:textColor="@color/colorText"
                     android:background="@drawable/et_round_border"
-                    android:inputType="textPersonName"
-                    android:hint="@string/shop_name_et"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/shop_desc_et"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/input_fields_hint_txt" />
@@ -96,6 +97,7 @@
                     android:layout_marginTop="@dimen/padding_large"
                     android:drawableEnd="@drawable/ic_arrow_drop_down"
                     android:drawablePadding="@dimen/padding_small"
+                    android:onClick="showShopTypeList"
                     android:padding="@dimen/padding_medium"
                     android:background="@drawable/et_round_border"
                     android:hint="@string/shop_type_et"
@@ -180,39 +182,64 @@
                     app:layout_constraintTop_toBottomOf="@+id/pictures_recycler"
                     android:text="@string/operational_time_title_txt" />
 
-                <EditText
+<!--                <EditText-->
+<!--                    android:id="@+id/starting_time_et"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    style="@style/TextAppearance.AppCompat.Medium"-->
+<!--                    android:layout_marginTop="@dimen/padding_large"-->
+<!--                    android:padding="@dimen/padding_medium"-->
+<!--                    android:inputType="time"-->
+<!--                    android:onClick="getStartingTime"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    android:nextFocusDown="@+id/ending_time_et"-->
+<!--                    android:textColor="@color/colorText"-->
+<!--                    android:background="@drawable/et_round_border"-->
+<!--                    android:hint="@string/starting_time_et"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/operational_time_title_txt" />-->
+
+                <com.shoppament.utils.view.TimeEditText
                     android:id="@+id/starting_time_et"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="@dimen/padding_large"
-                    android:padding="@dimen/padding_medium"
-                    android:singleLine="true"
                     android:imeOptions="actionNext"
                     android:nextFocusDown="@+id/ending_time_et"
-                    android:textColor="@color/colorText"
-                    android:background="@drawable/et_round_border"
-                    android:hint="@string/starting_time_et"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/operational_time_title_txt" />
 
-                <EditText
+                <com.shoppament.utils.view.TimeEditText
                     android:id="@+id/ending_time_et"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="@dimen/padding_large"
-                    android:padding="@dimen/padding_medium"
-                    android:singleLine="true"
                     android:imeOptions="actionNext"
                     android:nextFocusDown="@+id/shop_door_number_et"
-                    android:textColor="@color/colorText"
-                    android:background="@drawable/et_round_border"
-                    android:hint="@string/ending_time_et"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/starting_time_et" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/ending_time_et"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    style="@style/TextAppearance.AppCompat.Medium"-->
+<!--                    android:layout_marginTop="@dimen/padding_large"-->
+<!--                    android:padding="@dimen/padding_medium"-->
+<!--                    android:onClick="getEndingTime"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    android:nextFocusDown="@+id/shop_door_number_et"-->
+<!--                    android:textColor="@color/colorText"-->
+<!--                    android:background="@drawable/et_round_border"-->
+<!--                    android:hint="@string/ending_time_et"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/starting_time_et" />-->
 
                 <TextView
                     android:id="@+id/address_title_txt"
@@ -344,12 +371,13 @@
                     app:layout_constraintTop_toBottomOf="@+id/city_txt"
                     android:text="@string/average_time_title_txt" />
 
-                <TextView
+                <EditText
                     android:id="@+id/average_time_hh_et"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:singleLine="true"
+                    android:inputType="time"
                     android:onClick="getTime"
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="@dimen/padding_large"
@@ -372,11 +400,12 @@
                     app:layout_constraintBottom_toBottomOf="@+id/average_time_hh_et"
                     android:text="@string/average_time_space_txt" />
 
-                <TextView
+                <EditText
                     android:id="@+id/average_time_mm_et"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:inputType="time"
                     android:singleLine="true"
                     android:onClick="getTime"
                     android:textColor="@color/colorText"
@@ -582,6 +611,7 @@
                     style="@style/TextAppearance.AppCompat.Medium"
                     android:layout_marginTop="@dimen/padding_large"
                     android:padding="@dimen/padding_medium"
+                    android:onClick="restSlotTimings"
                     android:textColor="@color/colorText"
                     android:background="@drawable/btn_bg_shape"
                     android:text="@string/reset_slot_timings_btn"

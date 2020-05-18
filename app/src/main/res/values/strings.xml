@@ -66,6 +66,11 @@
     <string name="done_btn">Done</string>
     <string name="close_btn">Close</string>
 
+    <string name="time_hours">hrs</string>
+    <string name="time_minutes">mins</string>
+    <string name="title_slot">Slot</string>
+    <string name="title_to">to</string>
+
     <!--    <string name="google_maps_key">AIzaSyAKEtCq48OPf0U6TKZslDh8qKnvFcf_AU0</string>-->
 
     <string name="large_text">

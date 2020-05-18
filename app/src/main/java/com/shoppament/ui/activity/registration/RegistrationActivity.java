@@ -17,17 +17,21 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.shoppament.R;
 import com.shoppament.data.models.PictureModel;
+import com.shoppament.data.models.SlotTimingModel;
 import com.shoppament.databinding.ActivityRegistrationBinding;
 import com.shoppament.ui.adapters.PicturesRecyclerAdapter;
 import com.shoppament.ui.adapters.SlotsTimingRecyclerAdapter;
 import com.shoppament.ui.base.BaseActivity;
+import com.shoppament.utils.TimeFormatManager;
 import com.shoppament.utils.callbacks.IPictureListener;
 import com.shoppament.utils.callbacks.OnObjectChangedListener;
 import com.shoppament.utils.view.UploadFileController;
+import com.shoppament.utils.view.ViewController;
 import com.shoppament.utils.view.dialogs.LocationMapDialog;
 import com.shoppament.utils.view.dialogs.PictureViewDialog;
 import com.shoppament.utils.view.dialogs.UploadOptionsDialog;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -51,22 +55,31 @@ public class RegistrationActivity extends BaseActivity implements IPictureListen
 
         @Override
         public void afterTextChanged(Editable editable) {
-            String insideCapacityValue = activityRegistrationBinding.insideCapacityEt.getText().toString();
-            double insideCapacity = 0;
-            if(!insideCapacityValue.isEmpty()){
-                insideCapacity = Double.parseDouble(insideCapacityValue);
-            }
-            String outsideCapacityValue = activityRegistrationBinding.insideCapacityEt.getText().toString();
-            double outsideCapacity = 0;
-            if(!insideCapacityValue.isEmpty()){
-                outsideCapacity = Double.parseDouble(outsideCapacityValue);
-            }
-            //Fixed value for now
-            int averageTime = 2;
-            double totalCapacity = insideCapacity + outsideCapacity;
-            double perSlotTime = totalCapacity * averageTime;
+            double totalCapacity = registrationViewModel.getTotalCapacity(
+                    activityRegistrationBinding.insideCapacityEt.getText().toString(),
+                    activityRegistrationBinding.outsideCapacityEt.getText().toString());
+
             activityRegistrationBinding.totalCapacityTxt.setText(String.valueOf(totalCapacity));
-            activityRegistrationBinding.perSlotTimeTxt.setText(String.valueOf(perSlotTime));
+
+            registrationViewModel.getPerSlotTime(totalCapacity,
+                    activityRegistrationBinding.averageTimeHhEt.getText().toString(),
+                    activityRegistrationBinding.averageTimeMmEt.getText().toString())
+                    .observe(RegistrationActivity.this, new Observer<Double>() {
+                @Override
+                public void onChanged(Double perSlotTime) {
+                    int [] perSlotTimeHmMm = TimeFormatManager.getInstance().getHhMmFromMinutes(perSlotTime.intValue());
+                    StringBuilder perSlotTimeValue = new StringBuilder();
+                    if(perSlotTimeHmMm[0] != 0){
+                        perSlotTimeValue.append(perSlotTimeHmMm[0]);
+                        perSlotTimeValue.append(getResources().getString(R.string.time_hours));
+                        perSlotTimeValue.append("  ");
+                    }
+                    perSlotTimeValue.append(perSlotTimeHmMm[1]);
+                    perSlotTimeValue.append(getResources().getString(R.string.time_minutes));
+
+                    activityRegistrationBinding.perSlotTimeTxt.setText(perSlotTimeValue.toString());
+                }
+            });
         }
     };
 
@@ -85,12 +98,17 @@ public class RegistrationActivity extends BaseActivity implements IPictureListen
         activityRegistrationBinding.availableSlotTimingsRecycler.setLayoutManager(new LinearLayoutManager(this));
         slotsTimingRecyclerAdapter = new SlotsTimingRecyclerAdapter(registrationViewModel.getSlotTimingModels(),this);
         activityRegistrationBinding.availableSlotTimingsRecycler.setAdapter(slotsTimingRecyclerAdapter);
+
+        activityRegistrationBinding.startingTimeEt.setHint(getResources().getString(R.string.starting_time_et));
+        activityRegistrationBinding.endingTimeEt.setHint(getResources().getString(R.string.ending_time_et));
     }
 
     @Override
     protected void doCreate() {
         activityRegistrationBinding.insideCapacityEt.addTextChangedListener(totalCapacityWatcher);
         activityRegistrationBinding.outsideCapacityEt.addTextChangedListener(totalCapacityWatcher);
+        activityRegistrationBinding.averageTimeHhEt.addTextChangedListener(totalCapacityWatcher);
+        activityRegistrationBinding.averageTimeMmEt.addTextChangedListener(totalCapacityWatcher);
     }
 
     public void clickToUploadPics(View view) {
@@ -180,27 +198,33 @@ public class RegistrationActivity extends BaseActivity implements IPictureListen
         timePickerDialog.show();
     }
 
-
-    private void getTotalCapacity() {
-
-    }
-
-    private void getPerSlotTime() {
-
-    }
-
-    private void setSlotsAndTimings() {
-
-    }
-
-    private void deleteSelectedSlot() {
-
-    }
-
-    private void sendOtp() {
-
-    }
-
     public void submitTheRegistration(View view) {
+
+    }
+
+    public void restSlotTimings(View view) {
+        registrationViewModel.setSlotsAndTimings(activityRegistrationBinding.startingTimeEt.getTimeMinutes(),
+                activityRegistrationBinding.endingTimeEt.getTimeMinutes()).observe(this, new Observer<List<SlotTimingModel>>() {
+            @Override
+            public void onChanged(List<SlotTimingModel> slotTimingModels) {
+                if(slotTimingModels != null){
+                    slotsTimingRecyclerAdapter.setSlotTimingModels(slotTimingModels);
+                }
+            }
+        });
+    }
+
+    public void showShopTypeList(final View view) {
+        registrationViewModel.showShopTypeList().observe(this, new Observer<ArrayList<String>>() {
+            @Override
+            public void onChanged(ArrayList<String> list) {
+                ViewController.getInstance().showOptionsPopupWindow(activity, list, new OnObjectChangedListener() {
+                    @Override
+                    public void onObjectChanged(int id, int position, Object object) {
+                        activityRegistrationBinding.shopTypeTxt.setText((String)object);
+                    }
+                }).showAsDropDown(view);
+            }
+        });
     }
 }

@@ -8,6 +8,9 @@ import com.shoppament.R;
 import com.shoppament.data.room.database.AppDatabase;
 import com.shoppament.data.room.entity.DataEntity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RegistrationRepository {
     private Context context;
     private AppDatabase appDatabase;
@@ -48,5 +51,16 @@ public class RegistrationRepository {
         }
 
         return dataMutableLiveData;
+    }
+
+    public ArrayList<String> getShopTypes() {
+        ArrayList<String> data = new ArrayList<>();
+        data.add("Type 1");
+        data.add("Type 2");
+        data.add("Type 3");
+        data.add("Type 4");
+        data.add("Type 5");
+
+        return data;
     }
 }

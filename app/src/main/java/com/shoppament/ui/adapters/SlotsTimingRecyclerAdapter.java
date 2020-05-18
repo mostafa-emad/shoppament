@@ -23,6 +23,11 @@ public class SlotsTimingRecyclerAdapter extends BaseRecyclerAdapter{
         this.activity=activity;
     }
 
+    public void setSlotTimingModels(List<SlotTimingModel> slotTimingModels) {
+        this.slotTimingModels = slotTimingModels;
+        notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -35,7 +40,18 @@ public class SlotsTimingRecyclerAdapter extends BaseRecyclerAdapter{
         final MyViewHolder holder = (MyViewHolder) viewHolder;
         final SlotTimingModel slotTimingModel = slotTimingModels.get(position);
         try{
-            holder.binding.slotTimeTxt.setText(slotTimingModel.getTime());
+            StringBuilder slotTimeBuilder = new StringBuilder(activity.getResources().getString(R.string.title_slot));
+            slotTimeBuilder.append(" ");
+            slotTimeBuilder.append(position+1);
+            slotTimeBuilder.append(" - ");
+            slotTimeBuilder.append(slotTimingModel.getFromDate());
+            slotTimeBuilder.append(" ");
+            slotTimeBuilder.append(activity.getResources().getString(R.string.title_to));
+            slotTimeBuilder.append(" ");
+            slotTimeBuilder.append(slotTimingModel.getToDate());
+
+            holder.binding.slotTimeTxt.setText(slotTimeBuilder.toString());
+
             holder.binding.removeImg.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
